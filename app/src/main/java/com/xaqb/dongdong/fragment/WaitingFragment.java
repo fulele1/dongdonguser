@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatDelegate;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,12 +48,13 @@ public class WaitingFragment extends Fragment implements AdapterView.OnItemClick
         view = inflater.inflate(R.layout.fragment_waiting,null);
         instance = WaitingFragment.this.getActivity();
         getHttpData();
+
         tv = (TextView) view.findViewById(R.id.tv_waiting);
         mList = (ListView) view.findViewById(R.id.list_waiting);
         mList.setOnItemClickListener(WaitingFragment.this);
         return view;
     }
-
+    
     /**
      * 获取代取件的数据
      */
