@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/ly_pop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"
+            >
+
+            <TextView
+                android:id="@+id/bt_ide_win"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content"
+                android:text="身份证"
+                android:padding="@dimen/layout_padding"
+                android:gravity="center"
+                android:textColor="@color/wirte"
+                />
+
+            <TextView
+                android:id="@+id/bt_jz_win"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="驾照"
+                android:padding="@dimen/layout_padding"
+                android:gravity="center"
+                android:textColor="@color/wirte"
+                />
+
+            <TextView
+                android:id="@+id/bt_hkb_win"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="户口本"
+                android:padding="@dimen/layout_padding"
+                android:gravity="center"
+                android:textColor="@color/wirte"
+                />
+
+            <TextView
+                android:id="@+id/bt_jgz_win"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="军官证"
+                android:padding="@dimen/layout_padding"
+                android:gravity="center"
+                android:textColor="@color/wirte"
+                />
+
+            <TextView
+                android:id="@+id/bt_sbz_win"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="士兵证"
+                android:padding="@dimen/layout_padding"
+                android:gravity="center"
+                android:textColor="@color/wirte"
+                />
+
+            <TextView
+                android:id="@+id/bt_jiz_win"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="警官证"
+                android:padding="@dimen/layout_padding"
+                android:gravity="center"
+                android:textColor="@color/wirte"
+                />
+
+            <TextView
+                android:id="@+id/bt_gnhz_win"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="国内护照"
+                android:padding="@dimen/layout_padding"
+                android:gravity="center"
+                android:textColor="@color/wirte"
+                />
+
+            <TextView
+                android:id="@+id/bt_gazxz_win"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="港澳通行证"
+                android:padding="@dimen/layout_padding"
+                android:gravity="center"
+                android:textColor="@color/wirte"
+                />
+
+            <TextView
+                android:id="@+id/bt_other_win"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="其他"
+                android:padding="@dimen/layout_padding"
+                android:gravity="center"
+                android:textColor="@color/wirte"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

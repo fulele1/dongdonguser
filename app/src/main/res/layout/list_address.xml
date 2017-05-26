@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:layout_marginTop="@dimen/layout_padding"
+        >
+
+        <TextView
+            android:id="@+id/tv_user_add_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"/>
+        <TextView
+            android:id="@+id/tv_phone_add_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="254166852665"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_add_add_list"
+        android:layout_marginTop="@dimen/layout_padding"
+        android:layout_marginBottom="@dimen/layout_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="陕西省"
+        android:paddingRight="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        />
+
+    <LinearLayout style="@style/horizontal_black_line_small"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:layout_marginTop="@dimen/layout_padding"
+        android:layout_marginBottom="@dimen/layout_padding"
+        >
+
+        <TextView
+            android:id="@+id/tv_check_add_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/c32"
+            android:textSize="@dimen/edit_text"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="默认地址"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            >
+
+            <TextView
+                android:id="@+id/tv_edit_add_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/edit_text"
+                android:drawableLeft="@mipmap/edit32"
+                android:layout_alignLeft="@+id/tv_delete_add_list"
+                />
+            <TextView
+                android:id="@+id/tv_delete_add_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/edit_text"
+                android:drawableLeft="@mipmap/delete32"
+                android:layout_marginLeft="@dimen/layout_padding_small"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

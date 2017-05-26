@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_modify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.xaqb.dongdong.ModifyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modify_pic"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/iv_pic_modify"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/user64"
+            />
+    </RelativeLayout>
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_phone_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modify_nickname"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:id="@+id/tv_nickname_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="无昵称"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_sound"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/iv_prompt_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:src="@mipmap/off64"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <LinearLayout style="@style/horizontal_black_line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modify_psw"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_mpsw_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:src="@mipmap/psw64"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+    <Button
+        android:id="@+id/bt_finished_modify_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:text="@string/finished"
+        android:textColor="@color/wirte"
+        />
+
+</LinearLayout>

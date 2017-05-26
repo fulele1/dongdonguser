@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order_detial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.xaqb.dongdong.OrderDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号："
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_order_num_o_det"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="寄件人信息："
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_post_name_o_det"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="张三"
+                />
+            <TextView
+                android:id="@+id/tv_post_phone_o_det"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="18392395489"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_post_place_o_det"
+            android:layout_marginTop="@dimen/layout_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="陕西省西安市未央区未央路"
+            />
+    </LinearLayout>
+
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收件人信息："
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_receive_name_o_det"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="张三"
+                />
+            <TextView
+                android:id="@+id/tv_receive_phone_o_det"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="18392395489"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_receive_place_o_det"
+            android:layout_marginTop="@dimen/layout_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="陕西省西安市未央区未央路"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/var"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_variety_order_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weight"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_weight_order_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pic"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/iv_pic_one_order_del"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/take64"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margins" />
+
+        <ImageView
+            android:id="@+id/iv_pic_two_order_del"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/take64"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margins"/>
+
+        <ImageView
+            android:id="@+id/iv_pic_three_order_del"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/take64"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margins"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/other"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_note_order_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+    <Button
+        android:id="@+id/bt_cancel_order_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/wirte"/>
+
+</LinearLayout>

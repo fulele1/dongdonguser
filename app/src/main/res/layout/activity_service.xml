@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_service"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.xaqb.dongdong.ServiceActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flyme"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableTop="@mipmap/about128"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_version_service"
+        android:paddingTop="@dimen/activity_horizontal_margins"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <LinearLayout style="@style/horizontal_black_line"/>
+
+    <TextView
+        android:paddingTop="@dimen/activity_horizontal_margins"
+        android:layout_marginBottom="@dimen/activity_horizontal_margins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margins"
+        android:layout_marginRight="@dimen/activity_horizontal_margins"
+        android:text="    咚咚，是公司倾力打造全实名制的快递产品，客户和快递员都是经过公司审核认证实名身份，用户可以在线免费发布快递单，我们会为您分配附近最优的快递员上门取件，您可以在线支付，查询订单，可以再，还可以在快递员评价反馈公司，公司会给您提供最优质的快递服务。 "
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/bt_call_service"
+        android:layout_marginTop="@dimen/activity_horizontal_margins"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:text="客服：029-87888612"
+        android:textColor="@color/wirte"/>
+</LinearLayout>

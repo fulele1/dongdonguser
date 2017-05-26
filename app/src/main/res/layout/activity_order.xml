@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.xaqb.dongdong.OrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/tv_back_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="咚咚"
+            android:textColor="@color/textColor"
+            android:drawableLeft="@mipmap/back64"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:onClick="myClick"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_tilte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/title"
+            android:textColor="@color/black"
+            android:text="快递订单"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="咚咚"
+            android:drawableLeft="@mipmap/back64"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/horizontal_black_line"></LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rp_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+
+        >
+        <RadioButton
+            android:id="@+id/rb_published"
+            android:text="@string/publised"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_waiting"
+            android:text="@string/geting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:button="@null"
+            />
+        <RadioButton
+            android:id="@+id/rb_paying"
+            android:text="@string/paying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:button="@null"
+            />
+        <RadioButton
+            android:id="@+id/rb_posting"
+            android:text="@string/posting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            />
+        <RadioButton
+            android:id="@+id/rb_got"
+            android:text="@string/got"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/vpg_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

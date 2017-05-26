@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_do"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.xaqb.dongdong.DoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/post"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tv_post_do"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/iv_post_choose_do"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/exit64"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+            <LinearLayout style="@style/horizontal_black_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/get"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tv_receive_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/get"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/iv_receive_choose_do"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/exit64"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout style="@style/horizontal_black_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/var"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_variety_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+
+                <Spinner
+                    android:id="@+id/spinner_do"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/variety"
+                    ></Spinner>
+
+                <!--<TextView
+                    android:id="@+id/tv_choose_do"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请选择"
+                    android:drawableRight="@mipmap/down32"/>-->
+
+            </LinearLayout>
+            <LinearLayout style="@style/horizontal_black_line"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weight"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:id="@+id/tv_weight_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/chweight"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/edit_text"
+                    android:background="@null"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kg"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/horizontal_black_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pic"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:id="@+id/iv_pic_one_do"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/take64"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/activity_horizontal_margins" />
+
+                <ImageView
+                    android:id="@+id/iv_pic_two_do"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/take64"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/activity_horizontal_margins"/>
+
+                <ImageView
+                    android:id="@+id/iv_pic_three_do"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/take64"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/activity_horizontal_margins"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/horizontal_black_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/et_get_time_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="4小时/今天/明天"
+                    android:textSize="@dimen/edit_text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horizontal_black_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/et_note_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textSize="@dimen/edit_text"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/horizontal_black_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_check"
+                    android:layout_gravity="center"/>
+
+                <RadioGroup
+                    android:id="@+id/rp_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <RadioButton
+                        android:id="@+id/rb_yes_do"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textColor="@color/ff7c7c7c"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_no_do"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textColor="@color/ff7c7c7c"
+                        />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/horizontal_black_line"/>
+
+            <Button
+                android:id="@+id/bt_finished_do"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_gravity="center"
+                android:text="@string/finished"
+                android:textColor="@color/wirte"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
