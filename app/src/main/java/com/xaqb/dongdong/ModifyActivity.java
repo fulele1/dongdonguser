@@ -3,10 +3,12 @@ package com.xaqb.dongdong;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -193,10 +195,15 @@ public class ModifyActivity extends BaseActivity {
 
         }else if(requestCode == 3&& data != null){//图库
             Uri uri = data.getData();
-            mIvUserPic.setImageURI(uri);
+
+            try {
+                Bitmap mBitmap = MediaStore.Images.Media.getBitmap(instance.getContentResolver(), uri);
+                mIvUserPic.setImageBitmap(CutToCircleBit.getCircleBit(mBitmap));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
-
 
     /**
      * 获取用户的头像Bitmap

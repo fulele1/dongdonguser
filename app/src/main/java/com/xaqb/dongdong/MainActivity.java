@@ -157,7 +157,6 @@ public class MainActivity extends BaseActivity {
                 }else {
                     showToastB("请进行实名认证");//认证中：2.0  未认证 0.0  认证失败  3.0
                 }
-
                 break;
             case R.id.tv_query_main://订单查询
                 intentB(instance, QueryActivity.class);

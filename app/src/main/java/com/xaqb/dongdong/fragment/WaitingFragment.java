@@ -54,7 +54,7 @@ public class WaitingFragment extends Fragment implements AdapterView.OnItemClick
         mList.setOnItemClickListener(WaitingFragment.this);
         return view;
     }
-    
+
     /**
      * 获取代取件的数据
      */
