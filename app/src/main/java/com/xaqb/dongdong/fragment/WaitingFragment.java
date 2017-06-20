@@ -132,8 +132,6 @@ public class WaitingFragment extends Fragment implements AdapterView.OnItemClick
             case "05":
                 return "已发送";
         }
-
         return null;
     }
-
 }

@@ -84,9 +84,9 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
      * 初始化标题栏和内容界面
      */
     public void setUpViewsB() {
-        super.setContentView(R.layout.activity_base);
-        mLyTitle = (LinearLayout) findViewById(R.id.ly_title_bar);
-        mLyContent = (FrameLayout) findViewById(R.id.ly_content_base);
+        super.setContentView(R.layout.activity_base);//大的布局
+        mLyTitle = (LinearLayout) findViewById(R.id.ly_title_bar);//标题
+        mLyContent = (FrameLayout) findViewById(R.id.ly_content_base);//内容
         mTvBack = (TextView) findViewById(R.id.tv_back_title);
         mTvTitle = (TextView) findViewById(R.id.tv_title_tilte);
     }
